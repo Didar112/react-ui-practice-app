@@ -18,7 +18,7 @@ function App() {
       <NavBar></NavBar>
 
     </header>
-    <main>
+    <main className='container mx-auto'>
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
         <PricinfOptions pricingPromise={pricingPromise}></PricinfOptions>
       </Suspense>
