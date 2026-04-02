@@ -42,7 +42,7 @@ const links =  navLinks.map(item=><Link key={item.id} item={item}></Link>)
               {open? <X className='md:hidden'></X>:<Menu className='md:hidden'></Menu>}
               
               </span>
-              <ul className='md:hidden'>
+              <ul className={`md:hidden ${open?"left-11 top-6":"-left-100 top-6"} duration-200  absolute bg-slate-500`}>
                 {
                   links
                 }
@@ -51,7 +51,7 @@ const links =  navLinks.map(item=><Link key={item.id} item={item}></Link>)
             </span>
             <ul className='md:flex hidden'>
                 {links}
-            </ul>
+            </ul> 
 
             <button className='btn'>Sign in</button>
         </nav>
