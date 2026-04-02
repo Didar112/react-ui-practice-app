@@ -10,7 +10,7 @@ const PricinfOptions = ({pricingPromise}) => {
     return (
         <div>
             <h2 className='text-5xl'>Get your membership</h2>
-            <div className='grid gap-4 md:grid-cols-3'>
+            <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     pricingArr.map(PricingItem=><PricingCard key={PricingItem.id} PricingItem={PricingItem}></PricingCard>)
                 }
