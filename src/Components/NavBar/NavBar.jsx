@@ -33,6 +33,8 @@ const NavBar = () => {
     path: "/contact"
   }
 ];
+
+const links =  navLinks.map(item=><Link key={item.id} item={item}></Link>)
     return (
         <nav className='flex justify-between mx-10'>
             <span className='flex justify-between gap-2.5'>
@@ -40,12 +42,15 @@ const NavBar = () => {
               {open? <X className='md:hidden'></X>:<Menu className='md:hidden'></Menu>}
               
               </span>
+              <ul className='md:hidden'>
+                {
+                  links
+                }
+              </ul>
               <h3>My Website</h3>
             </span>
-            <ul className='flex'>
-                {
-                    navLinks.map(item=><Link key={item.id} item={item}></Link>)
-                }
+            <ul className='md:flex hidden'>
+                {links}
             </ul>
 
             <button className='btn'>Sign in</button>
