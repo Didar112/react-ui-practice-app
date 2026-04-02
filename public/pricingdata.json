@@ -1,0 +1,52 @@
+{
+  "pricingPlans": [
+    {
+      "id": 1,
+      "name": "Basic",
+      "price": 999,
+      "duration": "month",
+      "popular": false,
+      "description": "Ideal for students and fitness enthusiasts",
+      "features": [
+        "Access to gym equipment",
+        "Locker facility",
+        "1 group class per week",
+        "Free WiFi",
+        "Basic support"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Standard",
+      "price": 1999,
+      "duration": "month",
+      "popular": true,
+      "description": "Ideal for students and fitness enthusiasts",
+      "features": [
+        "Access to gym equipment",
+        "Unlimited group classes",
+        "Locker + Shower",
+        "Personal trainer (2 sessions/month)",
+        "Diet consultation",
+        "Priority support"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Premium",
+      "price": 3499,
+      "duration": "month",
+      "popular": false,
+      "description": "Ideal for students and fitness enthusiasts",
+      "features": [
+        "24/7 gym access",
+        "Unlimited group classes",
+        "Dedicated personal trainer",
+        "Custom diet plan",
+        "Sauna & spa access",
+        "Supplement guidance",
+        "VIP support"
+      ]
+    }
+  ]
+}

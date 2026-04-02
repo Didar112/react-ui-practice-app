@@ -36,7 +36,7 @@ const NavBar = () => {
 
 const links =  navLinks.map(item=><Link key={item.id} item={item}></Link>)
     return (
-        <nav className='flex justify-between mx-10'>
+        <nav className='flex justify-between mx-10 mt-4'>
             <span className='flex justify-between gap-2.5'>
               <span onClick={()=>setOpen(!open)}>
               {open? <X className='md:hidden'></X>:<Menu className='md:hidden'></Menu>}
